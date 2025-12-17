@@ -1,12 +1,14 @@
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import NavLink from "@/components/NavLink"
 import DefaultButton from "@/components/DefaultButton"
+import { useState } from "react";
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
     return(
         <header className="w-full py-6 px-48 bg-slate-900 max-md:px-12">
             <nav className="flex justify-between items-center ">
-                <h1 className="text-white text-3xl font-bold">Brainwave.io</h1>
+                <h1 className="text-white text-3xl font-bold max-md:text-2xl max-md:z-50">Brainwave.io</h1>
                     <ul className="flex items-center gap-12 max-md:hidden">
                         <NavLink text="Demos" />
                         <NavLink text="Pages" />
@@ -14,9 +16,20 @@ const Header = () => {
                         <NavLink text="Contact" />
                         <li><DefaultButton /></li>
                     </ul>
-                    <button className="hidden text-2xl text-white max-md:block"><Menu /></button>
+                <button className="hidden max-md:block max-md:z-50" onClick={() => {setMenuOpen(!menuOpen)}}>{menuOpen ? <X color="white" size={28} /> : <Menu color="white" size={28} />}</button>
             </nav>
-        </header>
+
+            {menuOpen && (
+                <div className="fixed top-0 left-0 w-full h-screen bg-slate-900  flex flex-col justify-center items-center gap-20  ">
+                    <ul className="flex flex-col gap-8 text-5xl">
+                        <NavLink text="Demos" />
+                        <NavLink text="Pages" />
+                        <NavLink text="Support" />
+                        <NavLink text="Contact" />
+                        <li><DefaultButton /></li>
+                    </ul>
+                </div>
+            )}        </header>
     )
 }
 
