@@ -1,5 +1,6 @@
 import Header from "@/components/layouts/Header"
 import HeroSection from "@/components/sections/HeroSection"
+import BrandsSection from "@/components/sections/BrandsSection"
 
 function App() {
  
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <main>
         <HeroSection />
+        <BrandsSection />
       </main>
     </div>
   )
