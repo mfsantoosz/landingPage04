@@ -7,6 +7,7 @@ import ContentSection from "./components/sections/ContentSection"
 import contentImg1 from "@/images/contentImg.png"
 import contentImg2 from "@/images/contentImg2.png"
 import contentImg3 from "@/images/contentImg3.png"
+import PricingSection from "@/components/sections/PricingSection"
 
 function App() {
  
@@ -33,6 +34,7 @@ function App() {
           description="Deliver exceptional experiences that keep customers coming back. Our platform helps you provide personalized support, streamline service delivery, and build lasting relationships that drive loyalty and growth." 
           image={contentImg3} 
         />
+        <PricingSection />
       </main>
     </div>
   )
