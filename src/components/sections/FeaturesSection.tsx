@@ -3,7 +3,7 @@ import { ChartNoAxesCombined, Layers, UserCog } from "lucide-react";
 
 export default function FeaturesSection(){
     return(
-        <section className="flex px-48 gap-20 justify-between py-20 max-md:flex-col max-md:justify-center  max-md:px-12">
+        <section className="flex px-48 gap-20 justify-between py-20 max-lg:flex-col max-lg:justify-center  max-lg:px-12">
             <FeaturesCard 
                 icon={Layers}
                 title="Organize your campaigns" 

@@ -24,7 +24,7 @@ export default function BrandsSection() {
   ]
 
   return (
-    <section className="py-16 w-full overflow-hidden max-md:py-10">
+    <section className="py-16 w-full overflow-hidden max-lg:py-10">
       <div className="hidden md:flex max-w-7xl mx-auto items-center justify-between gap-16 px-8">
         {brands.map((brand) => (
           <img

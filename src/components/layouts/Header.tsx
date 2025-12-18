@@ -6,17 +6,17 @@ import { useState } from "react";
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return(
-        <header className="w-full py-6 px-48 bg-slate-900 max-md:px-12">
+        <header className="w-full py-6 px-48 bg-slate-900 max-lg:px-12">
             <nav className="flex justify-between items-center ">
-                <h1 className="text-white text-3xl font-bold max-md:text-2xl max-md:z-50">Brainwave.io</h1>
-                    <ul className="flex items-center gap-12 max-md:hidden">
+                <h1 className="text-white text-3xl font-bold max-lg:text-2xl max-lg:z-50">Brainwave.io</h1>
+                    <ul className="flex items-center gap-12 max-lg:hidden">
                         <NavLink text="Demos" />
                         <NavLink text="Pages" />
                         <NavLink text="Support" />
                         <NavLink text="Contact" />
                         <li><DefaultButton /></li>
                     </ul>
-                <button className="hidden max-md:block max-md:z-50" onClick={() => {setMenuOpen(!menuOpen)}}>{menuOpen ? <X color="white" size={28} /> : <Menu color="white" size={28} />}</button>
+                <button className="hidden max-lg:block max-lg:z-50" onClick={() => {setMenuOpen(!menuOpen)}}>{menuOpen ? <X color="white" size={28} /> : <Menu color="white" size={28} />}</button>
             </nav>
 
             {menuOpen && (

@@ -12,7 +12,7 @@ const AnimatedLink = ({className}: AnimatedLinkProps) => {
     return(
          <>
         <motion.div
-             className={`flex items-center gap-3 text-green-400 font-semibold cursor-pointer text-xl max-md:text-lg ${className}`}
+             className={`flex items-center gap-3 text-green-400 font-semibold cursor-pointer text-xl max-lg:text-lg ${className}`}
              whileHover="hover"
              initial="initial"
            >
