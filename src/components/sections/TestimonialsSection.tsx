@@ -1,5 +1,4 @@
 import { TestimonialsCard } from "@/components/TestimonialsCard";
-import { motion } from "motion/react"
 
 export default function TestimonialsSection() {
 
@@ -26,7 +25,7 @@ export default function TestimonialsSection() {
         <section className="w-full h-[500px] px-48 py-20 flex flex-col items-center gap-24 bg-slate-100 max-lg:px-12 max-lg:gap-12 max-lg:h-screen max-lg:py-10">
             <h2 className="text-3xl text-slate-950 font-bold">What people say about us </h2>
             <div
-                className="flex flex-col items-baseline justify-center gap-12">
+                className="flex items-baseline justify-center gap-12 max-lg:flex-col">
                 {testimonialsData.map((testimonial) => (
                     <TestimonialsCard quote={testimonial.quote} author={testimonial.author} key={testimonial.id} />
                 ))}
