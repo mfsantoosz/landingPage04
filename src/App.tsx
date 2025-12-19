@@ -8,6 +8,7 @@ import contentImg1 from "@/images/contentImg.png"
 import contentImg2 from "@/images/contentImg2.png"
 import contentImg3 from "@/images/contentImg3.png"
 import PricingSection from "@/components/sections/PricingSection"
+import TestimonialsSection from "@/components/sections/TestimonialsSection"
 
 function App() {
  
@@ -35,6 +36,8 @@ function App() {
           image={contentImg3} 
         />
         <PricingSection />
+        <TestimonialsSection />
+        {/* <Footer /> */}
       </main>
     </div>
   )
